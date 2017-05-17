@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Sereba_AccountingPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.sereba.model.Admin</class>
+    <class>com.sereba.model.CredPayment</class>
+    <class>com.sereba.model.Creditor</class>
+    <class>com.sereba.model.Inventory</class>
+    <class>com.sereba.model.InventoryStock</class>
+    <class>com.sereba.model.PaymentMethod</class>
+    <class>com.sereba.model.PaymentPlan</class>
+    <class>com.sereba.model.Product</class>
+    <class>com.sereba.model.Sales</class>
+    <class>com.sereba.model.StoreStaff</class>
+    <class>com.sereba.model.SubscriptionPaylog</class>
+    <class>com.sereba.model.User</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/sereba_accounting?zeroDateTimeBehavior=convertToNull"/>
+      <property name="javax.persistence.jdbc.user" value="john"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="sereba2017"/>
+    </properties>
+  </persistence-unit>
+</persistence>
